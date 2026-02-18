@@ -1,0 +1,14 @@
+:root{
+    --primary-1: #1f2937;
+    /*bg color (hero and footer), info header text, quote text*/
+    --primary-g: #f9faf8;
+    /*hero main text, hero logo text*/
+    --primary-2:#e5e7eb;
+    /*hero secondary text, header link text, quote section bg color*/
+    --accent: #3882f6;
+    /*button color, call to action bg color*/
+}
+
+body{
+    font-family: Roboto;
+}
