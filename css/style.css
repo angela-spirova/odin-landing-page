@@ -9,4 +9,7 @@
     /*button color, call to action bg color*/
 }
 
+#hero{
+    background-color: var(--primary-1);
+}
 /* add font */
