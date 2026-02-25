@@ -10,11 +10,15 @@
 }
 /* add font */
 
+
 body{
     margin:0;
     display: flex;
     flex-direction: column;
     align-items:center;
+    
+    font-family:'Roboto', sans-serif;
+    font-size:1.2rem;
 }
 
 button{
@@ -24,6 +28,7 @@ button{
     border-radius:5px;
     padding:0.5em 1.5em;
     font-weight: bold;
+    font-size:inherit;
 }
 
 #hero, #quote, footer{
@@ -39,7 +44,7 @@ button{
 
     padding-top:1rem;
     gap:5rem;
-    padding-bottom:4rem;
+    padding-bottom:8rem;
 }
 #hero ul, #hero p{
     color:var(--primary-3);
@@ -73,10 +78,16 @@ header ul a{
 
 #hero>div{
     display:flex;
-    font-size:1.5rem;
     gap:3rem;
 }
 
+#hero>div>div:first-child *{
+    margin: 10px 0px;
+}
+
+#hero h1{
+    font-size:3em;
+}
 #hero .image-wrapper{
     width:800px;
     height:250px;
@@ -88,6 +99,7 @@ header ul a{
     display:flex;
     flex-direction: column;
     align-items: center;
+    padding: 3rem 0px;
 }
 #info h1{
     color:var(--primary-1);
@@ -95,6 +107,7 @@ header ul a{
 
 .card-collection{
     display:flex;
+    gap:50px;
 }
 .card{
     width:150px;
@@ -112,12 +125,42 @@ header ul a{
 /* quote section */
 #quote{
     background-color: var(--primary-3);
+    padding: 5rem 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote *{
+    width:50%;
+    margin: 0px;
+}
+#quote blockquote{
+    font-size: 2em;
+    font-weight: lighter;
+    font-style: italic;
+}
+#quote p{
+    text-align: right;
+    font-weight: bold;
 }
 
 /* call to action */
 #call-to-action{
+    width:70%;
+    box-sizing: border-box;
     background-color: var(--accent);
     color:var(--primary-2);
+    margin:5em;
+    padding: 2rem 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+#call-to-action>div *{
+    margin: 10px 0px;
 }
 #call-to-action p{
     color:var(--primary-3);
@@ -131,5 +174,5 @@ footer{
     background-color: var(--primary-1);
     color:var(--primary-2);
     text-align: center;
-    padding: 30px 0px;
+    padding: 40px 0px;
 }
