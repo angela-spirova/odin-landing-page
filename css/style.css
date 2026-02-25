@@ -1,15 +1,119 @@
 :root{
     --primary-1: #1f2937;
     /*bg color (hero and footer), info header text, quote text*/
-    --primary-g: #f9faf8;
+    --primary-2: #f9faf8;
     /*hero main text, hero logo text*/
-    --primary-2:#e5e7eb;
+    --primary-3:#e5e7eb;
     /*hero secondary text, header link text, quote section bg color*/
     --accent: #3882f6;
     /*button color, call to action bg color*/
 }
+/* add font */
 
+body{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+button{
+    background-color: var(--accent);
+    color:var(--primary-2);
+    border:none;
+    border-radius:5px;
+    padding:0.5em 1.5em;
+    font-weight: bold;
+}
+
+#hero, header, #quote, footer{
+    width:100%;
+}
+/* hero */
 #hero{
     background-color: var(--primary-1);
+    color:var(--primary-2);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
-/* add font */
+#hero ul, #hero p{
+    color:var(--primary-3);
+}
+
+header{
+    display:flex;
+    justify-content: space-between;    
+}
+
+header ul{
+    list-style: none;
+    padding:0;
+    display:flex;
+    justify-content: space-between;
+}
+header ul a{
+    text-decoration: none;
+    color:inherit;
+}
+
+#hero>div{
+    display:flex;
+}
+
+#hero .image-wrapper{
+    width:500px;
+    height:250px;
+    background-color: white;
+}
+
+/* info section */
+#info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#info h1{
+    color:var(--primary-1);
+}
+
+.card-collection{
+    display:flex;
+}
+.card{
+    width:150px;
+    text-align: center;
+    color:grey;
+}
+.card .image-wrapper{
+    width:150px;
+    height: 150px;
+    border: 4px var(--accent) solid;
+    border-radius:20px;
+}
+
+
+/* quote section */
+#quote{
+    background-color: var(--primary-3);
+}
+
+/* call to action */
+#call-to-action{
+    background-color: var(--accent);
+    color:var(--primary-2);
+}
+#call-to-action p{
+    color:var(--primary-3);
+}
+#call-to-action button{
+    border: 1px white solid;
+}
+
+/* footer */
+footer{
+    background-color: var(--primary-1);
+    color:var(--primary-2);
+    text-align: center;
+    padding: 30px 0px;
+}
