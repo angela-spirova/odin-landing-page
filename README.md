@@ -1,5 +1,5 @@
 # odin-landing-page
-Project for [The Odin Project](https://www.theodinproject.com/).
+[Project](https://www.theodinproject.com/lessons/foundations-recipes) for the [The Odin Project](https://www.theodinproject.com/).
 
 It's a simple landing page.
 
